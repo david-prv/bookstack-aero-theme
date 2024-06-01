@@ -37,11 +37,15 @@ body:not(#tinymce) {
   height: 2px;
 }
 
+#content {
+  height:100vh;
+}
+
 #content #main-content.height-fill {
   height: 90vh !important;
 }
 
-#main-content > div > div.grid.gap-xxl.right-focus > div:nth-child(1) {
+#main-content > div > div.grid.gap-xxl.right-focus > div:nth-child(1), #recent-user-activity {
   background-color: rgba(255, 255, 255, .74);
   border-radius: 8px;
   border-style: solid;
@@ -51,6 +55,11 @@ body:not(#tinymce) {
   box-sizing: border-box;
   backdrop-filter: blur(20px);
   padding:20px;
+  height:fit-content;
+}
+
+.content-wrap.card.full-height {
+  height:100%;
 }
 
 .tri-layout-right, .tri-layout-left, .page-edit-toolbar {
