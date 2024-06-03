@@ -49,6 +49,10 @@ button[type="submit"]:not(.icon-list-item, [aria-label="Search"]) {
   background: initial !important;
 }
 
+hr.darker {
+  display: none!important;
+}
+
 #main-content > div > div.grid.gap-xxl.right-focus > div:nth-child(1), #recent-user-activity {
   background-color: rgba(255, 255, 255, .74);
   border-radius: 8px;
@@ -68,6 +72,10 @@ button[type="submit"]:not(.icon-list-item, [aria-label="Search"]) {
 
 .content-wrap.card.full-height {
   height:100%;
+}
+
+.page-edit-toolbar {
+  margin-bottom:10px;
 }
 
 .tri-layout-right, .tri-layout-left, .page-edit-toolbar {
@@ -130,14 +138,14 @@ margin-top: auto;
   }
 }
 
-#sibling-navigation {
+#sibling-navigation, .comments-container {
   background-color: rgba(255, 255, 255, .6);
   border-radius: 8px;
   opacity: 1;
   backdrop-filter: blur(20px);
 }
 
-.dark-mode #sibling-navigation {
+.dark-mode #sibling-navigation, .dark-mode .comments-container {
   background-color: rgba(0, 0, 0, .74);
   border-radius: 8px;
   color: #fff;
@@ -145,7 +153,7 @@ margin-top: auto;
   backdrop-filter: blur(20px);
 }
 
-.dark-mode #sibling-navigation a .text-muted {
+.dark-mode #sibling-navigation a .text-muted, .dark-mode .comments-container a .text-muted {
   color: #fff !important;
 }
 
